@@ -1,0 +1,8 @@
+@use 'globals/colors';
+@use 'globals/fonts';
+@use 'globals/reset';
+@use 'globals/boilerplate';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/switch';
+/*# sourceMappingURL=main.css.map */

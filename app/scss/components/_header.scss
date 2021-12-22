@@ -1,0 +1,34 @@
+@use '../utilities/padding';
+
+// refer to namespace: 'padding' to use mixin
+.header {
+    @include padding.padding;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: var(--fw-700);
+   
+}
+
+.header__subtitle {
+    font-size: 14px;
+    color: var(--dark-text1);
+}
+
+.header__line {
+    height: 1px;
+    width: 100%;
+    display: inline-block;
+    background-color: #333A55;
+}
+
+.switch-c {
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch-c__title {
+    color: var(--dark-text1);
+    font-size: 14px;
+}
