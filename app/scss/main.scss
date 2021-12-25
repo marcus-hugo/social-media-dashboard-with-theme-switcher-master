@@ -5,10 +5,11 @@
 @use 'globals/fonts';
 @use 'globals/reset';
 @use 'globals/boilerplate';
-
-// Layout
-@use 'components/header';
-@use 'components/footer';
+@use 'globals/layout.scss';
 
 // Components
+@use 'components/header';
 @use 'components/switch';
+@use 'components/card-top';
+@use 'components/card-bottom';
+@use 'components/footer';

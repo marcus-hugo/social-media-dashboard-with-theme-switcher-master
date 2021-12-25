@@ -1,0 +1,55 @@
+.c-bottom {
+    background-color: var(--dark-bg-card);
+    border-radius: 5px;
+    width: 326px;
+    height: 125px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 27px 24px 19px 24px;
+
+    @media(min-width: 1140px) {
+        width: 255px;
+        height: 125px;
+    }
+}
+
+.c-bottom__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark-text1);
+}
+
+.c-bottom__stats {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.c-bottom__icon, .c-bottom__change-w {
+    justify-self: end;
+}
+
+.c-bottom__change-w {
+    display: flex;
+    align-items: center;
+    align-self: end;
+    padding-bottom: 7px;
+    gap: 3px;
+}
+.c-bottom__change-stat {
+    font-size: 12px;
+}
+
+// modifiers
+
+// change green
+.c-bottom__change-stat--green {
+    color: var(--lime-green);
+}
+
+// change red
+.c-bottom__change-stat--red {
+    color: var(--bright-red);
+}

@@ -19,8 +19,12 @@
 
 <body>
   <header class="header">
-    <h1 class="header__title">Social Media Dashboard</h1>
-    <h3 class="header__subtitle"> Total Followers: 23,004</h3>
+    <div class="header-w">
+    <div class="header__title-w">
+      <h1 class="header__title">Social Media Dashboard</h1>
+      <h3 class="header__subtitle"> Total Followers: 23,004</h3>
+    </div>
+    
     <span class="header__line"></span>
     <div class="switch-c">
       <p class="switch-c__title">Dark Mode</p>
@@ -29,132 +33,183 @@
         <span class="slider round"></span>
       </label>
     </div>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <!-- ----------- -->
     <!-- Top Section -->
     <!-- ----------- -->
-    <section>
+    <section class="s-top">
 
       <!-- Facebook -->
-      <article>
-        <img src="images/icon-facebook.svg" alt="">
-        <p>@nathanf</p>
-        <span> 1987</span>
-        <p>Followers</p>
-        <img src="images/icon-up.svg" alt="">
-        <span>12 Today</span>
+      <article class="c-top c-top--facebook">
+        <div class="c-top__user-w">
+          <img class="c-top__icon" src="images/icon-facebook.svg" alt="">
+          <p class="c-top__user">@nathanf</p>
+        </div>
+        <span class="c-top__stats"> 1987</span>
+        <p class="c-top__title">Followers</p>
+        <div class="c-top__change-w">
+          <img class="c-top__change" src="images/icon-up.svg" alt="">
+          <span class="c-top__change-day">12 Today</span>
+        </div>
       </article>
 
       <!-- Twitter -->
-      <article>
-        <img src="images/icon-twitter.svg" alt="">
-        <p>@nathanf</p>
-        <span>1044</span>
-        <p>Followers</p>
-        <img src="images/icon-up.svg" alt="">
-        <span>99 Today</span>
+      <article class="c-top c-top--twitter">
+        <div class="c-top__user-w">
+          <img  class="c-top__icon" src="images/icon-twitter.svg" alt="">
+          <p class="c-top__user">@nathanf</p>
+        </div>
+        
+        <span class="c-top__stats">1044</span>
+        <p class="c-top__title">Followers</p>
+
+        <div class="c-top__change-w">
+          <img class="c-top__change" src="images/icon-up.svg" alt="">
+          <span class="c-top__change-day c-top__change-day--green">99 Today</span>
+        </div>
+       
       </article>
 
       <!-- Instagram -->
-      <article>
-        <img src="images/icon-instagram.svg" alt="">
-        <p>@realnathanf</p>
-        <span>11k</span>
-        <p>Followers</p>
-        <img src="images/icon-up.svg" alt="">
-        <span>1099 Today</span>
+      <article class="c-top c-top--instagram">
+        <div class="c-top__user-w">
+          <img class="c-top__icon" src="images/icon-instagram.svg" alt="">
+          <p class="c-top__user">@realnathanf</p>
+        </div>
+        
+        <span class="c-top__stats">11k</span>
+        <p class="c-top__title">Followers</p>
+        <div class="c-top__change-w">
+          <img class="c-top__change" src="images/icon-up.svg" alt="">
+          <span class="c-top__change-day c-top__change-day--green">1099 Today</span>
+        </div>
+       
       </article>
 
       <!-- Youtube -->
-      <article>
-        <img src="images/icon-youtube.svg" alt="">
-        <p>Nathan F.</p>
-        <span>8239</span>
-        <p> Subscribers</p>
-        <img src="images/icon-down.svg" alt="">
-        <span>144 Today</span>
+      <article class="c-top c-top--youtube">
+        <div class="c-top__user-w">
+          <img class="c-top__icon" src="images/icon-youtube.svg" alt="">
+          <p class="c-top__user">Nathan F.</p>
+        </div>
+        
+        <span class="c-top__stats">8239</span>
+        <p class="c-top__title"> Subscribers</p>
+        <div class="c-top__change-w">
+          <img class="c-top__change" src="images/icon-down.svg" alt="">
+          <span class="c-top__change-day c-top__change-day--red">144 Today</span>
+        </div>
+        
       </article>
     </section>
 
     <!-- -------------- -->
     <!-- Bottom Section -->
     <!-- -------------- -->
-    <section>
-      <h2>Overview - Today</h2>
+    <section class="s-bottom">
 
+      <div class="s-bottom__title-w">
+        <h2 class="s-bottom__title">Overview - Today</h2>
+      </div>
+
+      <div class="s-bottom-w">
       <!-- Facebook -->
-      <article>
-        <p> Page Views</p>
-        <img src="images/icon-facebook.svg" alt="">
-        <span>87</span>
-        <img src="images/icon-up.svg" alt="">
-        <span> 3%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Page Views</p>
+        <img class="c-bottom__icon" src="images/icon-facebook.svg" alt="">
+        <span class="c-bottom__stats">87</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-up.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--green">3%</span>
+        </div>
+        
       </article>
 
-      <article>
-        <p>Likes</p>
-        <img src="images/icon-facebook.svg" alt="">
-        <span>52</span>
-        <img src="images/icon-down.svg" alt="">
-        <span>2%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Likes</p>
+        <img class="c-bottom__icon" src="images/icon-facebook.svg" alt="">
+        <span class="c-bottom__stats">52</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-down.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--red">2%</span>
+        </div>
+       
       </article>
 
       <!-- Instagram -->
-      <article>
-        <p>Likes</p>
-        <img src="images/icon-instagram.svg" alt="">
-        <span>5462</span>
-        <img src="images/icon-up.svg" alt="">
-        <span>2257%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Likes</p>
+        <img class="c-bottom__icon" src="images/icon-instagram.svg" alt="">
+        <span class="c-bottom__stats">5462</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-up.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--green">2257%</span>
+        </div>
+        
       </article>
 
-      <article>
-        <p>Profile Views</p>
-        <img src="images/icon-instagram.svg" alt="">
-        <span>52k</span>
-        <img src="images/icon-up.svg" alt="">
-        <span>1375%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Profile Views</p>
+        <img class="c-bottom__icon" src="images/icon-instagram.svg" alt="">
+        <span class="c-bottom__stats">52k</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-up.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--green">1375%</span>
+        </div>
+        
       </article>
 
       <!-- Twitter -->
-      <article>
-        <p>Retweets</p>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Retweets</p>
 
-        <img src="images/icon-twitter.svg" alt="">
-        <span>117</span>
-
-        <img src="images/icon-up.svg" alt="">
-        <span>303%</span>
+        <img class="c-bottom__icon" src="images/icon-twitter.svg" alt="">
+        <span class="c-bottom__stats">117</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-up.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--green">303%</span>
+        </div>
+        
 
       </article>
 
-      <article>
-        <p>Likes</p>
-        <img src="images/icon-twitter.svg" alt="">
-        <span>507</span>
-        <img src="images/icon-up.svg" alt="">
-        <span>553%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Likes</p>
+        <img class="c-bottom__icon" src="images/icon-twitter.svg" alt="">
+        <span class="c-bottom__stats">507</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-up.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--green">553%</span>
+        </div>
+        
       </article>
 
       <!-- Youtube -->
-      <article>
-        <p>Likes</p>
-        <img src="images/icon-youtube.svg" alt="">
-        <span>107</span>
-        <img src="images/icon-down.svg" alt="">
-        <span>19%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Likes</p>
+        <img class="c-bottom__icon" src="images/icon-youtube.svg" alt="">
+        <span class="c-bottom__stats">107</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-down.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--red">19%</span>
+        </div>
+        
       </article>
 
-      <article>
-        <p>Total Views</p>
-        <img src="images/icon-youtube.svg" alt="">
-        <span>1407</span>
-        <img src="images/icon-down.svg" alt="">
-        <span>12%</span>
+      <article class="c-bottom">
+        <p class="c-bottom__title">Total Views</p>
+        <img class="c-bottom__icon" src="images/icon-youtube.svg" alt="">
+        <span class="c-bottom__stats">1407</span>
+        <div class="c-bottom__change-w">
+          <img class="c-bottom__change-icon" src="images/icon-down.svg" alt="">
+          <span class="c-bottom__change-stat c-bottom__change-stat--red">12%</span>
+        </div>
+        
       </article>
-
+      </div>
     </section>
   </main>
   <footer class="attribution">
