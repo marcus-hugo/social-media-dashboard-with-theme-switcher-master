@@ -12,3 +12,4 @@
 ## Sass folder structures
 https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 
+- started following Coder Coder's videos using the Gulp workflow

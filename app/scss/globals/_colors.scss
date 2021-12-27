@@ -16,7 +16,9 @@
     
     // Light Theme
     --toggle-light: hsl(230, 22%, 74%);
-    
+    --toggle-circle-dark: hsl(228, 28%, 20%);
+    --toggle-circle-light: hsl(227, 47%, 96%);
+
     // Neutral
     
     // Dark Theme
@@ -26,6 +28,7 @@
     --dark-text1: hsl(228, 34%, 66%);
     --dark-text2: hsl(0, 0%, 100%);
     --dark-text3: hsl(0, 0%, 85%);
+    --card-hover-dark: brightness(1.15);
     
     // Light Theme
     --light-bg: hsl(0, 0%, 100%);
@@ -33,4 +36,36 @@
     --light-bg-card: hsl(227, 47%, 96%);
     --light-text1: hsl(228, 12%, 44%);
     --light-text2: hsl(230, 17%, 14%);
+    --card-hover-light: brightness(.95);
+
+    // variable variables
+    --background: var(--dark-bg);
+    --header-bg: var(--dark-bg-top);
+    --card-bg: var(--dark-bg-card);
+    --text-color1: var(--dark-text1);
+    --text-color2: var(--dark-text2);
+    --card-hover: var(--card-hover-dark);
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --background: var(--light-bg);
+            --header-bg: var(--light-bg-top);
+            --card-bg: var(--light-bg-card);
+            --text-color1: var(--light-text1);
+            --text-color2: var(--light-text2);
+            --card-hover: var(--card-hover-light);
+            --toggle-circle: var(--toggle-circle-light);
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background: var(--dark-bg);
+            --header-bg: var(--dark-bg-top);
+            --card-bg: var(--dark-bg-card);
+            --text-color1: var(--dark-text1);
+            --text-color2: var(--dark-text2);
+            --card-hover: var(--card-hover-dark);
+            --toggle-circle: var(--toggle-circle-dark);
+        }
     }

@@ -1,5 +1,5 @@
 .c-bottom {
-    background-color: var(--dark-bg-card);
+    background-color: var(--card-bg);
     border-radius: 5px;
     width: 326px;
     height: 125px;
@@ -41,6 +41,10 @@
     &__change-stat {
         font-size: 12px;
     }
+    &:hover {
+        cursor: pointer;
+        filter: var(--card-hover);
+    }
 }
 
 // MODIFIERS
@@ -52,4 +56,18 @@
 // change red
 .c-bottom__change-stat--red {
     color: var(--bright-red);
+}
+
+// light theme
+.c-bottom.light-theme {
+    background: var(--light-bg-card);
+}
+
+.c-bottom:hover.light-theme {
+    filter: var(--card-hover-light);
+}
+
+// dark theme
+.c-bottom.dark-theme {
+    background: var(--dark-bg-card);
 }

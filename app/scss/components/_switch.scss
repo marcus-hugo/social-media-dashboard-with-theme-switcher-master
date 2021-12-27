@@ -1,9 +1,25 @@
+// Switch container
+.switch-c {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  padding: 10px 0 38px 0;
+  &__title {
+      color: var(--dark-text1);
+      font-size: 14px;
+      @media(min-width: 1140px) {
+          padding-right: 13px;
+      }
+  }
+}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
     width: 48px;
     height: 24px;
+    grid-area: 1/2/2/3;
   }
 
   /* Hide default HTML checkbox */
@@ -33,13 +49,13 @@
     width: 18px;
     left: 4px;
     bottom: 3px;
-    background-color: var(--dark-bg-card);
+    background-color: var(--toggle-circle);
     -webkit-transition: .4s;
     transition: .4s;
   }
 
   input:checked + .slider {
-    background-color: var(--toggle-dark);
+    background-color: var(--toggle-light);
   }
 
   input:focus + .slider {
@@ -47,16 +63,51 @@
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(22px);
+    background: var(--toggle-circle-light);
   }
 
   /* Rounded sliders */
-.slider.round {
+  .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  // higlight title on hover of switch
+  // https://jsfiddle.net/ThinkingStiff/dWHzF/
+
+  // * Only works on decendant selectors or next siblings NOT previous siblings or parents!
+  .switch:hover ~ .switch-c__title {
+    color: var(--dark-text2);
+  }
+
+  .switch:hover ~ .switch-c__title {
+    color: var(--dark-text1);
+  }
+
+  .switch-c__title {
+    color: var(--light-text1);
+  }
+  // slider light-theme
+  .slider.light-theme {
+    background: var(--toggle-light);
+  }
+  .slider:hover.light-theme {
+    background: var(--toggle-dark);
+  }
+  .slider::before.light-theme {
+    background: var(--toggle-circle-light);
+  }
+  // slider dark-theme
+  .slider.dark-theme {
+    background: var(--toggle-dark);
+  }
+  .slider:hover.dark-theme {
+    background: var(--toggle-dark);
+  }
+  .slider::before.dark-theme {
+    background: var(--toggle-circle-dark);
   }

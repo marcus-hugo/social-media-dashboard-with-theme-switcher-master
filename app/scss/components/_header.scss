@@ -4,7 +4,7 @@
 .header {
     @include mixins.padding;
     padding-top: 36px;
-    background-color: var(--dark-bg-top);
+    background-color: var(--header-bg);
     height: 235px;
     &-w {
         @media(min-width: 800px) {
@@ -38,16 +38,12 @@
     }
 }
 
-// Switch
-.switch-c {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0 38px 0;
-    &__title {
-        color: var(--dark-text1);
-        font-size: 14px;
-        @media(min-width: 1140px) {
-            padding-right: 13px;
-        }
-    }
+.header.light-theme {
+    background-color: var(--light-bg-top);
+    color: var(--light-text2);
+}
+
+.header.dark-theme {
+    background: var(--dark-bg-top);
+    color: var(--dark-text2);
 }

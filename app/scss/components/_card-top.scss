@@ -1,6 +1,6 @@
 
 .c-top {
-    background-color: var(--dark-bg-card);
+    background-color: var(--card-bg);
     border-radius: 5px;
     display: grid;
     justify-items: center;
@@ -49,6 +49,10 @@
         font-weight: var(--fw-700);
         color: var(--dark-text3);
     }
+    &:hover {
+        cursor: pointer;
+        filter: var(--card-hover);
+    }
 }
 
 // modifiers
@@ -88,4 +92,17 @@
 // change red
 .c-top__change-day--red {
     color: var(--bright-red);
+}
+
+// light theme
+.c-top.light-theme {
+    background: var(--light-bg-card);
+}
+.c-top:hover.light-theme {
+    filter: var(--card-hover-light);
+}
+
+// dark theme
+.c-top.dark-theme {
+    background: var(--dark-bg-card);
 }
