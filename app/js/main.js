@@ -5,14 +5,6 @@ const slider = document.querySelector('.slider');
 const cards = document.querySelectorAll('article');
 const checkbox = document.querySelector('input');
 
-// on reload, the toggle position will be based on the selected color scheme
-if(window.matchMedia('(prefers-color-scheme: dark)').matches === true) {
-    checkbox.checked = '';
-  }
-if(window.matchMedia('(prefers-color-scheme: light)').matches === true) {
-    checkbox.checked = true;
-}
-
 // toggling light mode on
 toggle.addEventListener('click', function() {
     body.classList.toggle('light-theme');
@@ -40,11 +32,12 @@ checkbox.addEventListener('click', function() {
 // https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener
 // https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent
 
+// on reload, the toggle position will be based on the selected color scheme
 // when light mode is detected the toggle checkbox will be in the checked position
 var mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
 
 function screenTest(e) {
-  if (e.matches) {
+  if (e.matches === true) {
     checkbox.checked = true;
   } else {
       checkbox.checked = false;
