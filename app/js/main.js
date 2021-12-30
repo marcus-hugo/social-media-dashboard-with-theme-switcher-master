@@ -32,7 +32,6 @@ checkbox.addEventListener('click', function() {
 // https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener
 // https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent
 
-// on reload, the toggle position will be based on the selected color scheme
 // when light mode is detected the toggle checkbox will be in the checked position
 var mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
 
@@ -43,18 +42,17 @@ function screenTest(e) {
       checkbox.checked = false;
   }
 }
+mediaQueryList.addEventListener('change', screenTest);
 
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+// set toggle position on load or reload
 function togglePosition() {
   if(mediaQueryList.matches === true || body.className === 'light-theme') {
     checkbox.checked = true;
   } else {
     checkbox.checked = false;
   }
-  
 }
-
-mediaQueryList.addEventListener('change', screenTest);
-
 window.onload = () => {
   togglePosition();
   console.log('page is fully loaded');
