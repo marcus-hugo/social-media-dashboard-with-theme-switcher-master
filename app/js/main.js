@@ -44,4 +44,18 @@ function screenTest(e) {
   }
 }
 
+function togglePosition() {
+  if(mediaQueryList.matches === true || body.className === 'light-theme') {
+    checkbox.checked = true;
+  } else {
+    checkbox.checked = false;
+  }
+  
+}
+
 mediaQueryList.addEventListener('change', screenTest);
+
+window.onload = () => {
+  togglePosition();
+  console.log('page is fully loaded');
+};
