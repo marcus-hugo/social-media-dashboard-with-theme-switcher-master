@@ -45,7 +45,6 @@
     --text-color1: var(--dark-text1);
     --text-color2: var(--dark-text2);
     --card-hover: var(--card-hover-dark);
-    --toggle-circle: var(--toggle-circle-dark);
     }
 
     @media (prefers-color-scheme: light) {
@@ -56,9 +55,9 @@
             --text-color1: var(--light-text1);
             --text-color2: var(--light-text2);
             --card-hover: var(--card-hover-light);
-            --toggle-circle: var(--toggle-circle-light);
         }
     }
+    
     @media (prefers-color-scheme: dark) {
         :root {
             --background: var(--dark-bg);
@@ -67,6 +66,5 @@
             --text-color1: var(--dark-text1);
             --text-color2: var(--dark-text2);
             --card-hover: var(--card-hover-dark);
-            --toggle-circle: var(--toggle-circle-dark);
         }
     }
