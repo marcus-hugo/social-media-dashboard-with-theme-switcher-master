@@ -310,7 +310,8 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
 }
 
 input:checked + .slider:hover {
