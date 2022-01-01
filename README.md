@@ -71,6 +71,10 @@ Refactoring JS.  Learning more about Sass.
 
 
 ### Useful resources
+
+- Coder Coder's youtube videos:
+    - https://www.youtube.com/playlist?list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP
+
 - Sass folder structures
 https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 
