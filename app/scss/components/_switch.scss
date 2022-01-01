@@ -60,6 +60,10 @@ input:checked+.slider {
   background: var(--toggle-light);
 }
 
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
 input:checked+.slider:hover {
   background: var(--toggle-dark);
 }
