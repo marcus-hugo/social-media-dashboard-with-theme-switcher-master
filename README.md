@@ -74,12 +74,20 @@ Refactoring JS.  Learning more about Sass.
 - Sass folder structures
 https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 
-- For `window.matchMedia`
-// https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener
-// https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent
+- Toggle Switch
+https://www.w3schools.com/howto/howto_css_switch.asp
+
+ - For `window.matchMedia`
+    - https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener
+ 
+    - https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent
 
 - On load event
 // https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+
+ - higlight title on hover of switch
+ https://jsfiddle.net/ThinkingStiff/dWHzF/
+
 ## Author
 
 - Website - [Marcus Hugo](https://marcus-hugo.github.io/My-Personal-Website/)
