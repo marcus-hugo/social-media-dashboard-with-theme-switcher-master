@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   justify-content: space-between;
-  padding: 10px 0 38px 0;
+  padding: 10px 0 16px 0;
 
   &__title {
     color: var(--dark-text1);
@@ -62,7 +62,7 @@ input:checked+.slider {
 
 input:focus+.slider {
   outline: dashed 2px lightgrey;
-    outline-offset: 5px;
+  outline-offset: 5px;
 }
 
 input:checked+.slider:hover {
@@ -83,20 +83,23 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-// higlight title on hover of switch
-// https://jsfiddle.net/ThinkingStiff/dWHzF/
-
+// higlight title on hover of switch see: https://jsfiddle.net/ThinkingStiff/dWHzF/
 // * Only works on decendant selectors or next siblings NOT previous siblings or parents!
-.switch:hover~.switch-c__title {
+
+/* p color when not checked */
+input+.slider:hover+p {
   color: var(--dark-text2);
 }
-
-.switch:hover~.switch-c__title {
-  color: var(--dark-text1);
+/* p color when checked */
+input:checked+.slider:hover+p {
+  color: var(--light-text2);
 }
 
 .switch-c__title {
-  color: var(--light-text1);
+  position: relative;
+  top: -22px;
+  left: -85px;
+  width: max-content;
 }
 
 // slider light-theme
@@ -123,4 +126,7 @@ input:checked+.slider:before {
 
 .slider::before.dark-theme {
   background: var(--toggle-circle-dark);
+}
+input:checked.switch:hover.switch-c__title {
+  color: red;
 }

@@ -5,7 +5,7 @@
     display: grid;
     gap: 46px;
     position: relative;
-    top: -45px;
+    top: -194px;
 }
 
 // Section top
@@ -17,12 +17,20 @@
     align-items: center;
 
     @media(min-width: 1140px) {
-        flex-direction: row;
         margin: 0 auto;
         gap: 30px;
     }
 }
 
+.cards-top-container {
+    display: grid;
+    gap: 24px;
+
+    @media(min-width: 1140px) {
+        display: flex;
+        gap: 30px;
+    }
+}
 // Section botton
 .s-bottom {
     display: flex;
