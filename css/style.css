@@ -347,12 +347,12 @@ input:checked + .slider:before {
 }
 
 /* p color when not checked */
-input + .slider:hover + div {
+input + .slider:hover + .switch-c__title {
   color: var(--dark-text2);
 }
 
 /* p color when checked */
-input:checked + .slider:hover + div {
+input:checked + .slider:hover + .switch-c__title {
   color: var(--light-text2);
 }
 
